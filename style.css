@@ -282,6 +282,7 @@ text-align:justify;
 
 .contenido p{
     background-color: var(--white);
+    margin-bottom: 10px;
 }
 
 .contenido a:hover{
@@ -312,7 +313,7 @@ text-align:justify;
 .project p {
     font-size:var(--sm);
     margin-bottom: 10px;
-    height: 100px;
+    height: 90px;
 }
 /* 
 .boton-git{
@@ -331,12 +332,16 @@ text-align:justify;
     text-decoration: underline;
 }
 
+.boton-git{
+    padding-top: 70px;
+
+}
 
 .boton-personalizado {
     
     background-color: var(--color-terciario); 
     border: none;
-    color: white;
+    color:var(--black);
     padding: 15px 27px;
     text-align: center;
     text-decoration: none;
