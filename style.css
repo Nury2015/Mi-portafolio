@@ -136,7 +136,7 @@ header {
     z-index: 1;
     top: 0;
     width: 100%;
-    height: 125px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,18 +154,23 @@ header {
     
 }
 
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding: 10px;
+}
+
 .profile img {
     width:70px;
-    border-radius: 70%;
-    display: block;
-    margin: 20px auto 15px auto;
+    border-radius: 50%;
+    margin:  0 10px 0 0; 
 }
 
 .profile h2 {
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 20px;;
     color:var(--black);
-    font-size: var(--lg);
+    font-size: var(--sm);
 }
 
 nav ul {
@@ -238,7 +243,7 @@ nav ul li a:hover {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 125px;
+    margin-top: 100px;
     padding: 10px;
     background: var(--degradado);
     /* width: calc(100% - 200px); */
@@ -385,88 +390,126 @@ footer {
         width: 100%;
     }
 
+
     .project {
         width: 300px;
     }
+
+    .project p{
+        height: 100px;
+    }
+
+    .project .boton-git{
+
+        padding-top: 120px;
+    }
+    .boton-personalizado{
+   
+    display:flex;
+    flex-direction: row;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px) and (min-width: 768px) {
     header {
-        height: auto;
-        flex-direction: column;
-        align-items: flex-start;
+        height:100px;
+        flex-direction: row;
+        align-items: center; /* Cambia a center para centrar mejor los elementos */
+        gap: 20px; /* Agrega espaciado entre los elementos */
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .profile h2{
+        font-size:var(--sm);
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: flex-start; /* Mantén esto si quieres los links a la izquierda */
+        gap: 10px; /* Espaciado entre enlaces */
     }
+
+   
 
     .content {
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 100%; /* Ajusta para centrar y evitar exceso de ancho */
     }
 
     .project {
         width: 80%;
+        margin: auto; /* Centra los proyectos */
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 691px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between; /* Distribuye elementos de forma uniforme */
+        padding: 10px;
+    }
+
     h1 {
-        font-size: 36px;
+        font-size: 15px;
     }
 
     .profile img {
-        width: 50px;
+        width: 50px; /* Mantén el tamaño reducido */
     }
 
-    .project img {
-        height: 200px;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 0.5rem;
-        align-items: center;
-        font-size: var(--sm);
+    .profile h2{
+        font-size:var(--sm);
     }
 
     nav ul {
-        gap: 10px;
+        flex-direction: row; /* Cambia los enlaces a fila para pantallas más grandes */
+        gap: 15px; /* Espaciado entre enlaces */
+    }
+}
+
+@media (max-width: 690px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        padding: 0.5rem;
+        font-size: var(--sm);
+    }
+
+    h1 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .social {
+        display: none; /* Oculta el menú completo */
     }
 
     .titulo {
-        font-size: var(--sm);
+        font-size: 18px; /* Reduce el tamaño del título */
+        text-align: center;
     }
+
     .content{
-        margin-top: 200px;
-    }
-    .contenido {
-        padding: 10px;
-        
+        padding-top: 100px;
     }
 
     .project {
         width: 100%;
     }
 
-    .social, nav{
-        display:none;
-        z-index: 1;
+    .burguer {
+        display: flex; /* Mostrar icono hamburguesa para menú móvil */
     }
 
-    .mobile, nav{
-        z-index: 2;
+    .social1 a{
+        padding-bottom:25px ;
     }
-    .burguer{
-        display: flex;
-    }
-}   
-
-
-
+}
 
 
