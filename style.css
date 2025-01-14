@@ -1,13 +1,13 @@
 :root {
     --color-primario: #e0f2f0;
     --color-secondary: #d4ecf6;
-    --color-terciario:#e0f2f0;
-    --degradado: radial-gradient(circle, 
-    #D4F0E5 0%, 
-    #CDECEC 25%, 
-    #DDF0F3 50%, 
-    #DCF3EA 75%, 
-    #B5DCFE 100%);
+    --color-terciario: #e0f2f0;
+    --degradado: radial-gradient(circle,
+            #D4F0E5 0%,
+            #CDECEC 25%,
+            #DDF0F3 50%,
+            #DCF3EA 75%,
+            #B5DCFE 100%);
     --white: #FFFFFF;
     --black: #000000;
     --dark: #232830;
@@ -35,35 +35,35 @@ body {
     justify-content: flex-start;
     margin: 0;
     padding: 0;
-    
-    }
 
-    .burguer{
+}
 
-       display:none;
-        margin-top: 10px;
-        margin-left: 10px;
-        width: 180px;
-        height: 25px;
-        border: none;
-        background-color:transparent;
-        position: fixed;
-        z-index: 4;
-        cursor: pointer;
-    }
+.burguer {
 
-    .burguer img{
+    display: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 180px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    position: fixed;
+    z-index: 4;
+    cursor: pointer;
+}
 
-        height: 100%;
-    }
+.burguer img {
 
-    .close{
-        display: none;
-    }
+    height: 100%;
+}
 
-    
+.close {
+    display: none;
+}
 
-.mobile{
+
+
+.mobile {
     display: none;
     width: 200px;
     height: 100%;
@@ -71,15 +71,16 @@ body {
     background-color: var(--white);
 
 }
-.social1{
-    display:flex;
+
+.social1 {
+    display: flex;
     flex-direction: column;
     align-items: start;
     margin-top: 100px;
-    border-top: 1px solid var(--azul-oscuro);   
+    border-top: 1px solid var(--azul-oscuro);
 }
 
-.social1 nav{
+.social1 nav {
     margin-bottom: 50px;
 }
 
@@ -88,13 +89,13 @@ body {
 
     gap: 20px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     list-style-type: none;
     text-decoration: none;
     font-size: var(--sm);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-   
+
 }
 
 
@@ -111,7 +112,7 @@ body {
 
 
 .social1 img {
-    
+
     width: 30px;
     height: 30px;
     background-color: var(--azul-oscuro);
@@ -123,11 +124,11 @@ body {
     font-size: var(--sm);
     text-decoration: none;
     margin-bottom: 0;
-   
+
 }
 
 .social1 a:hover {
-    color:var(--azul-claro);
+    color: var(--azul-claro);
 }
 
 
@@ -145,31 +146,32 @@ header {
 }
 
 
- h1 {
-    color:var(--black);
+h1 {
+    color: var(--black);
     font-size: 44px;
     font-family: "Fascinate Inline", system-ui;
     font-weight: 200;
     font-style: normal;
-    
+
 }
 
-.profile{
+.profile {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     padding: 10px;
 }
 
 .profile img {
-    width:70px;
+    width: 70px;
     border-radius: 50%;
-    margin:  0 10px 0 0; 
+    margin: 0 10px 0 0;
 }
 
 .profile h2 {
-    font-size: 20px;;
-    color:var(--black);
+    font-size: 20px;
+    ;
+    color: var(--black);
     font-size: var(--sm);
 }
 
@@ -199,17 +201,17 @@ nav ul li a:hover {
 }
 
 
-.social{
+.social {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     gap: 30px;
-   
+
 }
 
 .social img {
-    
+
     width: 20px;
     height: 20px;
     background-color: var(--azul-oscuro);
@@ -221,11 +223,11 @@ nav ul li a:hover {
     font-size: var(--md);
     text-decoration: none;
     margin-bottom: 0;
-   
+
 }
 
 .social a:hover {
-    color:var(--azul-claro);
+    color: var(--azul-claro);
     transform: translateY(-10px);
 }
 
@@ -252,20 +254,20 @@ nav ul li a:hover {
 
 .content p {
     margin-bottom: 40px;
-     /* box-shadow: 4px 3px 10px 0 rgba(0, 0, 0, 0.2); */
-     border: solid 1px  white;
-     padding: 10px;
-     background-color:var(--color-secondary);
+    /* box-shadow: 4px 3px 10px 0 rgba(0, 0, 0, 0.2); */
+    border: solid 1px white;
+    padding: 10px;
+    background-color: var(--color-secondary);
 }
 
 
-.titulo{
-    width:100%;
+.titulo {
+    width: 100%;
     height: 50px;
     margin: 0;
     padding: 0;
     background-color: var(--white);
-    font-size:var(--md);
+    font-size: var(--md);
     border-bottom: 2px solid #d4eeed;
     border-left: 2px solid var(--white);
     display: flex;
@@ -274,34 +276,35 @@ nav ul li a:hover {
 }
 
 .contenido {
- padding: 15px;
- margin-top: 0;
- border-top: 2px solid var(--white);
-text-align:justify;
+    padding: 15px;
+    margin-top: 0;
+    border-top: 2px solid var(--white);
+    text-align: justify;
 }
 
-.contenido p{
+.contenido p {
     background-color: var(--white);
     margin-bottom: 10px;
 }
 
-.contenido a:hover{
+.contenido a:hover {
     color: #ffd9d9;
     cursor: pointer;
 }
 
 .project {
-   
+
     margin-bottom: 20px;
-    background-color:var(--white);
+    background-color: var(--white);
     width: 400px;
     border-radius: 20px;
     box-shadow: 4px 3px 10px 0 rgba(117, 111, 111, 0.8);
     border: 10px solid var(--white);
-} 
+}
+
 .project:hover {
-   transform: translateY(-10px);
-  }
+    transform: translateY(-10px);
+}
 
 .project img {
     width: 100%;
@@ -311,10 +314,11 @@ text-align:justify;
 }
 
 .project p {
-    font-size:var(--sm);
+    font-size: var(--sm);
     margin-bottom: 10px;
     height: 90px;
 }
+
 /* 
 .boton-git{
     display: flex;
@@ -323,7 +327,7 @@ text-align:justify;
 
 .project a {
     text-decoration: none;
-    color:var(--azul-oscuro);
+    color: var(--azul-oscuro);
     font-weight: bold;
     margin-right: 25px;
 }
@@ -332,16 +336,16 @@ text-align:justify;
     text-decoration: underline;
 }
 
-.boton-git{
+.boton-git {
     padding-top: 70px;
 
 }
 
 .boton-personalizado {
-    
-    background-color: var(--color-terciario); 
+
+    background-color: var(--color-terciario);
     border: none;
-    color:var(--black);
+    color: var(--black);
     padding: 15px 27px;
     text-align: center;
     text-decoration: none;
@@ -351,12 +355,12 @@ text-align:justify;
     cursor: pointer;
     border-radius: 12px;
     transition: background-color 0.3s ease;
-    white-space: nowrap; 
+    white-space: nowrap;
 
 }
 
 .boton-personalizado:hover {
-    background-color:var(--dark);
+    background-color: var(--dark);
 }
 
 footer {
@@ -369,7 +373,7 @@ footer {
 }
 
 .footer-content {
-   
+
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -385,7 +389,7 @@ footer {
     font-size: 16px;
 }
 
-.footer-links a:hover{
+.footer-links a:hover {
     text-decoration: underline;
 }
 
@@ -400,60 +404,82 @@ footer {
         width: 300px;
     }
 
-    .project p{
+    .project img {
+        height: 200px;
+    }
+
+    .project p {
         height: 100px;
     }
 
-    .project .boton-git{
+    .project .boton-git {
 
-        padding-top: 120px;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: row;
     }
-    .boton-personalizado{
-   
-    display:flex;
-    flex-direction: row;
+
+    .boton-personalizado {
+        margin-top: 80px;
+        width: 120px;
+        font-size: 10px
+    }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
     header {
-        height:100px;
+        height: 100px;
         flex-direction: row;
-        align-items: center; /* Cambia a center para centrar mejor los elementos */
-        gap: 20px; /* Agrega espaciado entre los elementos */
+        align-items: center;
+        /* Cambia a center para centrar mejor los elementos */
+        gap: 20px;
+        /* Agrega espaciado entre los elementos */
     }
 
     header h1 {
         font-size: 25px;
     }
 
-    .profile h2{
-        font-size:var(--sm);
+    .profile h2 {
+        font-size: var(--sm);
     }
 
     nav ul {
         flex-direction: row;
-        align-items: flex-start; /* Mantén esto si quieres los links a la izquierda */
-        gap: 10px; /* Espaciado entre enlaces */
+        align-items: flex-start;
+        /* Mantén esto si quieres los links a la izquierda */
+        gap: 10px;
+        /* Espaciado entre enlaces */
     }
 
-   
+
 
     .content {
         flex-direction: column;
         align-items: center;
-        width: 100%; /* Ajusta para centrar y evitar exceso de ancho */
+        width: 100%;
+        /* Ajusta para centrar y evitar exceso de ancho */
     }
 
     .project {
-        width: 80%;
-        margin: auto; /* Centra los proyectos */
+        width: 45%;
+        margin: auto;
+        /* Centra los proyectos */
+    }
+
+    .project .boton-git {
+
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
     }
 }
 
 @media (max-width: 768px) and (min-width: 691px) {
     header {
         flex-direction: row;
-        justify-content: space-between; /* Distribuye elementos de forma uniforme */
+        justify-content: space-between;
+        /* Distribuye elementos de forma uniforme */
         padding: 10px;
     }
 
@@ -462,16 +488,19 @@ footer {
     }
 
     .profile img {
-        width: 50px; /* Mantén el tamaño reducido */
+        width: 50px;
+        /* Mantén el tamaño reducido */
     }
 
-    .profile h2{
-        font-size:var(--sm);
+    .profile h2 {
+        font-size: var(--sm);
     }
 
     nav ul {
-        flex-direction: row; /* Cambia los enlaces a fila para pantallas más grandes */
-        gap: 15px; /* Espaciado entre enlaces */
+        flex-direction: row;
+        /* Cambia los enlaces a fila para pantallas más grandes */
+        gap: 15px;
+        /* Espaciado entre enlaces */
     }
 }
 
@@ -492,28 +521,26 @@ footer {
     }
 
     .social {
-        display: none; /* Oculta el menú completo */
+        display: none;
+        /* Oculta el menú completo */
     }
 
     .titulo {
-        font-size: 18px; /* Reduce el tamaño del título */
+        font-size: 18px;
+        /* Reduce el tamaño del título */
         text-align: center;
     }
 
-    .content{
+    .content {
         padding-top: 100px;
     }
 
-    .project {
-        width: 100%;
-    }
-
     .burguer {
-        display: flex; /* Mostrar icono hamburguesa para menú móvil */
+        display: flex;
+        /* Mostrar icono hamburguesa para menú móvil */
     }
 
-    .social1 a{
-        padding-bottom:25px ;
+    .social1 a {
+        padding-bottom: 25px;
     }
-}
 }
