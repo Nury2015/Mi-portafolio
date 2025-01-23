@@ -259,11 +259,7 @@ nav ul li a:hover {
     border: solid 1px white;
     padding: 10px;
     background-color: var(--color-secondary);
-    display: -webkit-box;
-    -webkit-line-clamp: 5   ;  /* Limita a 2 líneas */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+   
 }
 
 
@@ -290,6 +286,11 @@ nav ul li a:hover {
 
 .contenido p {
     background-color: var(--white);
+    display: -webkit-box;
+    -webkit-line-clamp: 5   ;  /* Limita a 2 líneas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
 }
 
