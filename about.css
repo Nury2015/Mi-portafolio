@@ -3,6 +3,7 @@
     --azul-claro: #00b4d8;
     --azul-mas-claro: #90e0ef;
     --super-claro: #caf0f8;
+    --blanco:white;
 }
 
 body {
@@ -10,11 +11,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--azul-mas-claro);
+    background-color: var(--wh);
 }
 
 .back-button {
-    background-color:var(--azul-oscuro);
+    background-color:var(--azul-mas-claro);
     color: white;
     border: none;
     padding: 10px 20px;
