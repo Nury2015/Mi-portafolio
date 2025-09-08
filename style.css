@@ -393,110 +393,22 @@ footer {
 }
 
 
-@media (max-width: 1200px) {
-    .content {
-        width: 100%;
-    }
 
-    .contenido{
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .project {
-        width: 300px;
-    }
-
-    .project img {
-        height:100%;
-    }
-
-    .project .boton-git {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .boton-personalizado {
-        width: 120px;
-        font-size: 10px
-    }
-}
-
-@media (max-width: 992px) and (min-width: 768px) {
-    header {
-        height: 100px;
-        flex-direction: row;
-        align-items: center;
-        /* Cambia a center para centrar mejor los elementos */
-        gap: 20px;
-        /* Agrega espaciado entre los elementos */
-    }
-
-    header h1 {
-        font-size: 25px;
-    }
-
-    .profile h2 {
-        font-size: var(--sm);
-        
-    }
-
-    nav ul {
-        flex-direction: row;
-        align-items: flex-start;
-        /* Mantén esto si quieres los links a la izquierda */
-        gap: 10px;
-        /* Espaciado entre enlaces */
-    }
-
-
-
-    .content {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        /* Ajusta para centrar y evitar exceso de ancho */
-    }
-
-    .project {
-        width: 45%;
-        margin: auto;
-        /* Centra los proyectos */
-    }
-
-}
-
-@media (max-width: 768px) and (min-width: 691px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        /* Distribuye elementos de forma uniforme */
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 15px;
-    }
-
-    .profile img {
-        width: 50px;
-        /* Mantén el tamaño reducido */
-    }
-
-    .profile h2 {
-        font-size: var(--sm);
-    }
-
-    nav ul {
-        flex-direction: row;
-        /* Cambia los enlaces a fila para pantallas más grandes */
-        gap: 15px;
-        /* Espaciado entre enlaces */
-    }
-}
 
 @media (max-width: 690px) {
+
+
+    .presentacion{
+        margin-top: 200px;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile img{
+        width: 150px;
+    }
     header {
         height: auto;
         flex-direction: column;
@@ -508,7 +420,7 @@ footer {
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 40px;
         padding-bottom: 10px;
     }
 
@@ -524,9 +436,8 @@ footer {
         text-align: center;
     }
 
-    .content {
-        padding-top: 100px;
-    }
+
+   
 
     .burguer {
         display: flex;
