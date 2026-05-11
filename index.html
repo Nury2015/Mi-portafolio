@@ -1,125 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head></head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta charset="UTF-8">
-<title>Portafolio Nury</title>
-<link rel="stylesheet" href="index.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Nury</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
-    <!-- HERO -->
-    <!-- SOBRE MI -->
-    <section class="about">
-        <h1>👋 Hola, soy Nury Bustos</h1>
-        <img src="img/perfil/perfilfoto.jpeg" class="foto-perfil">
-        <p class="sobreMi">
-            Soy Front-end trainee en formación en el SENA. Desarrollo interfaces web usando HTML, CSS y JavaScript,
-            creando proyectos como tiendas online, una calculadora y una cartelera de cine.
+  <!-- NAV -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
 
-            Me enfoco en diseño responsive, experiencia de usuario y aprendizaje continuo, apoyándome en herramientas
-            como la inteligencia artificial para mejorar mis soluciones.
-        </p>
+  <!-- HERO / SOBRE MI -->
+  <section class="about" id="sobre-mi">
+    <h1>👋 Hola, soy Nury Bustos</h1>
+    <img src="img/perfil/perfilfoto.jpeg" class="foto-perfil" alt="Foto de perfil de Nury Bustos">
+    <p class="sobreMi">
+      Soy Front-end trainee en formación en el SENA. Comencé desde cero, construyendo cada proyecto sola,
+      aprendiendo a base de prueba y error. Con el tiempo fui incorporando la inteligencia artificial como
+      herramienta de apoyo para revisar mi código, entender errores y mejorar mis soluciones.
+      Hoy desarrollo interfaces web con HTML, CSS y JavaScript, con foco en diseño responsive
+      y experiencia de usuario — y sigo aprendiendo todos los días.
+    </p>
+    <a href="#proyectos" class="btn">Ver proyectos</a>
+  </section>
 
-        <a href="#proyectos" class="btn">Ver proyectos</a>
-    </section>
+  <!-- HABILIDADES -->
+  <section class="habilidades" id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Responsive Design</span>
+      <span class="skill">Git</span>
+      <span class="skill">GitHub</span>
+    </div>
+  </section>
 
-    </header>
+  <!-- PROYECTOS -->
+  <section class="proyectos" id="proyectos">
+    <h2>Mis proyectos</h2>
+    <div class="grid">
 
+      <div class="card">
+        <img src="img/card/ecomerce.jpeg" alt="Tienda online con carrito de compras">
+        <h3>Tienda online con carrito de compras</h3>
+        <p>Sistema de ecommerce donde el usuario puede visualizar productos, seleccionar cantidades y agregarlos
+          al carrito. Incluye manejo de estado con JavaScript, almacenamiento en localStorage y diseño
+          responsive.</p>
+        <p>HTML, CSS, JS</p>
+        <a href="https://nury2015.github.io/Decayba/" class="boton-personalizado" target="_blank">Visitar tienda</a>
+        <a href="https://github.com/Nury2015/Decayba" class="boton-personalizado" target="_blank">Código</a>
+      </div>
 
+      <div class="card">
+        <img src="img/card/calculadora.jpeg" alt="Calculadora de calorías diarias">
+        <h3>Calculadora de calorías diarias</h3>
+        <p>Aplicación web que calcula la cantidad de calorías que una persona debe consumir diariamente según
+          sus datos. Implementa lógica en JavaScript, manipulación del DOM y manejo de eventos, con un enfoque
+          en salud y experiencia de usuario.</p>
+        <p>HTML, CSS, JS</p>
+        <a href="https://nury2015.github.io/ViveSano/" class="boton-personalizado" target="_blank">Probar Demo</a>
+        <a href="https://github.com/Nury2015/ViveSano" class="boton-personalizado" target="_blank">Código</a>
+      </div>
 
+      <div class="card">
+        <img src="img/card/cartelera.jpeg" alt="Cartelera de cine">
+        <h3>Cartelera de Cine</h3>
+        <p>Interfaz web para explorar películas en cartelera. Muestra título, género y horarios de cada función
+          mediante tarjetas visuales. Diseño atractivo con HTML, CSS y JavaScript para una experiencia
+          de usuario fluida.</p>
+        <p>HTML, CSS, JS</p>
+        <a href="https://nury2015.github.io/cartelera/" class="boton-personalizado" target="_blank">Ver cartelera</a>
+        <a href="https://github.com/Nury2015/cartelera" class="boton-personalizado" target="_blank">Código</a>
+      </div>
 
+      <div class="card">
+        <img src="img/card/ecostore.jpeg" alt="Eco Store - landing page de tienda online">
+        <h3>Eco Store</h3>
+        <p>Landing page de tienda online enfocada en diseño moderno y responsive.</p>
+        <p>HTML, CSS</p>
+        <a href="https://nury2015.github.io/Eco-store/" class="boton-personalizado" target="_blank">Probar Demo</a>
+        <a href="https://github.com/Nury2015/Eco-store" class="boton-personalizado" target="_blank">Repositorio</a>
+      </div>
 
-    <!-- PROYECTOS -->
-    <section class="proyectos" id="proyectos">
-        <h2>Mis proyectos</h2>
+    </div>
+  </section>
 
-        <div class="grid">
-
-            <div class="card">
-                <img src="img/card/ecomerce.jpeg">
-                <h3>Tienda online con carrito de compras</h3>
-                <p>Sistema de ecommerce donde el usuario puede visualizar productos, seleccionar cantidades y agregarlos
-                    al carrito. Incluye manejo de estado con JavaScript, almacenamiento en localStorage y diseño
-                    responsive.</p>
-                <p>HTML, CSS, JS</p>
-                <a href="https://nury2015.github.io/Decayba/" class="boton-personalizado" target="_blank">Visitar
-                    tienda</a>
-                <a href="https://github.com/Nury2015/Decayba" class="boton-personalizado" target="_blank">Código</a>
-            </div>
-
-            <div class="card">
-                <img src="img/card/calculadora.jpeg">
-                <h3>Calculadora de calorías diarias</h3>
-                <p>Aplicación web que calcula la cantidad de calorías que una persona debe consumir diariamente según
-                    sus datos. Implementa lógica en JavaScript, manipulación del DOM y manejo de eventos, con un enfoque
-                    en salud y experiencia de usuario.</p>
-                <p>HTML, CSS, JS</p>
-                <a href="https://nury2015.github.io/ViveSano/" class="boton-personalizado" target="_blank">Probar
-                    Demo</a>
-                <a href="https://github.com/Nury2015/ViveSano" class="boton-personalizado" target="_blank">Código</a>
-            </div>
-
-            <div class="card">
-                <img src="img/card/cartelera.jpeg">
-                <h3>Cartelera de Cine</h3>
-                <p>Interfaz web para mostrar películas en formato de cartelera.</p>
-                <p>HTML, CSS, JS</p>
-                <a href="https://nury2015.github.io/cartelera/" class="boton-personalizado" target="_blank">Ver
-                    cartelera</a>
-
-
-                <a href="https://github.com/Nury2015/cartelera" class="boton-personalizado" target="_blank">Código</a>
-            </div>
-
-
-            <div class="card">
-                <img src="img/card/ecostore.jpeg">
-                <h3>Eco Store</h3>
-                <p>Landing page de tienda online enfocada en diseño moderno y responsive.</p>
-                <p>HTML, CSS</p>
-                <a href="https://nury2015.github.io/Eco-store/" class="boton-personalizado" target="_blank">Probar
-                    Demo</a>
-
-
-                <a href="https://github.com/Nury2015/Eco-store" class="boton-personalizado"
-                    target="_blank">Repositorio</a>
-            </div>
-
-
-
-
-        </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section class="contacto">
-        <h2>Contáctame</h2>
-
-        <div class="contact-icons">
-
-            <!-- GMAIL -->
-
-            <a href="https://mail.google.com/mail/?view=cm&to=nuryurbano@gmail.com" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="gmail">
-
-            </a>
-
-            <!-- WHATSAPP -->
-            <a href="https://wa.me/573154380079" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="whatsapp">
-            </a>
-            <!-- linkedln -->
-             <a href="https://www.linkedin.com/in/nury-bustos-urbano-443956320" class="contacto-link" target="_blank">
-                <img src="img/icono/icono-linke.png" alt="ícono de linkedln" class="contacto-icon">
-            </a>
-
-        </div>
-    </section>
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <h2>Contáctame</h2>
+    <div class="contact-icons">
+      <a href="https://mail.google.com/mail/?view=cm&to=nuryurbano@gmail.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+      </a>
+      <a href="https://wa.me/573154380079" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp">
+      </a>
+      <a href="https://www.linkedin.com/in/nury-bustos-urbano-443956320" class="contacto-link" target="_blank">
+        <img src="img/icono/icono-linke.png" alt="LinkedIn" class="contacto-icon">
+      </a>
+    </div>
+  </section>
 
 </body>
 

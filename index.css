@@ -1,225 +1,256 @@
-body{
-  margin:0;
-  font-family:sans-serif;
-  background:#0f172a;
-  color:white;
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #0f172a;
+  color: white;
 }
 
-/* HERO */
-.about{
-  margin-top: 100px;
+/* NAV */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0f172a;
+  border-bottom: 1px solid #1e293b;
+  z-index: 100;
+  padding: 15px 0;
 }
-.foto-perfil{
-   width: 150px;
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #cbd5f5;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #22c55e;
+}
+
+/* HERO / SOBRE MI */
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px 50px;
+}
+
+.about h1 {
+  font-size: 40px;
+}
+
+.foto-perfil {
+  width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #22c55e;
-  box-shadow: 0 0 15px rgba(34,197,94,0.5);
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.5);
 }
 
-.foto-perfil img{
-    object-fit: cover;
-}
-.hero{
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
-
-.hero h1{
-  font-size:40px;
-}
-
-.btn{
-  background:#22c55e;
-  padding:10px 20px;
-  color:white;
-  text-decoration:none;
-  border-radius:8px;
-  margin-top:15px;
-}
-
-/* SECCIONES */
-
-.sobreMi{
-
+.sobreMi {
   max-width: 700px;
-  margin: 0 auto; /* centra */
+  margin: 20px auto 30px;
   text-align: center;
   font-size: 16px;
-  line-height: 1.7; /* espacio entre líneas */
-  color: #cbd5f5; /* gris clarito elegante */
+  line-height: 1.7;
+  color: #cbd5f5;
   background: #1e293b;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  margin-top: 20px;
-      margin-bottom: 41px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-section{
-  padding:50px 20px;
-  text-align:center;
-  
+.btn {
+  background: #22c55e;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #16a34a;
+}
+
+/* HABILIDADES */
+.habilidades {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill {
+  background: #1e293b;
+  color: #22c55e;
+  border: 1px solid #22c55e;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* SECCIONES */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* PROYECTOS */
+.proyectos {
+  padding-top: 80px;
 }
 
 /* GRID */
-.grid{
-  display:grid;
-  grid-template-columns: repeat(3,450px);
-  gap:50px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
   justify-content: center;
-  margin-top:20px;
-}
-
-.proyectos{
-  margin-top: 100px;
+  margin-top: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* CARD */
-.card{
-  background:#1e293b;
-  padding:15px;
-  border-radius:10px;
-  transition:0.3s;
+.card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
-.card:hover{
-  transform:translateY(-5px);
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.card img{
-  width:100%;
-  border-radius:8px;
+.card img {
+  width: 100%;
+  border-radius: 8px;
 }
 
-.card a{
-  display:inline-block;
-  margin-top:10px;
-  color:#f0f8f3;
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #f0f8f3;
 }
 
 .boton-personalizado {
-
-    background-color:#22c55e;
-    border: none;
-    color:white;
-    padding: 15px 27px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 3px;
-    cursor: pointer;
-    border-radius: 12px;
-    transition: background-color 0.3s ease;
-    white-space: nowrap;
-
+  background-color: #22c55e;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 6px 3px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
 }
 
 .boton-personalizado:hover {
-    background-color:#244725;
+  background-color: #16a34a;
 }
-
 
 /* CONTACTO */
-.contact-icons{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.contact-icons img{
-  width:40px;
-  transition:0.3s;
-  cursor:pointer;
+.contact-icons img {
+  width: 40px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-.contact-icons img:hover{
-  transform:scale(1.2);
+.contact-icons img:hover {
+  transform: scale(1.2);
 }
 
-@media (max-width: 900px){
-
-  /* GRID → 2 columnas */
-  .grid{
-    grid-template-columns: repeat(2, 1fr);
-    padding: 20px;
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .navbar ul {
+    gap: 20px;
   }
 
-  /* FOTO PERFIL */
-  .foto-perfil{
+  .foto-perfil {
     width: 120px;
     height: 120px;
   }
 
-  /* TEXTO SOBRE MI */
-  .sobreMi{
+  .sobreMi {
     font-size: 14px;
-    padding: 0 20px;
+    padding: 15px 20px;
   }
-
 }
 
-@media (max-width: 600px){
-
-  /* HERO */
-  .about{
-    padding: 20px;
-    text-align: center;
+@media (max-width: 600px) {
+  .navbar ul {
+    gap: 15px;
   }
 
-  .about h1{
+  .navbar a {
+    font-size: 13px;
+  }
+
+  .about h1 {
     font-size: 22px;
   }
 
-  .foto-perfil{
+  .foto-perfil {
     width: 100px;
     height: 100px;
   }
 
-  /* TEXTO */
-  .sobreMi{
+  .sobreMi {
     font-size: 13px;
     line-height: 1.5;
   }
 
-  /* BOTÓN */
-  .btn{
+  .btn {
     padding: 10px 20px;
     font-size: 14px;
   }
 
-  /* GRID → 1 columna */
-  .grid{
-    grid-template-columns: 1fr;
+  .grid {
     gap: 20px;
   }
 
-  /* CARDS */
-  .card{
+  .card {
     width: 90%;
     margin: auto;
   }
 
-  .card img{
-    height: auto;
-  }
-
-  /* CONTACTO */
-  .contact-icons{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .contact-icons img{
+  .contact-icons img {
     width: 35px;
   }
-
 }
